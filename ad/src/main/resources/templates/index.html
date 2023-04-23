@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modo de usuario</title>
+</head>
+<header class="header">
+    <div class="header__logo">
+        <span class="logo">
+            <img width="250" height="140" src="../imagenes/Logo-CENS-e1638186779920.png" class="custom-logo">
+        </span>
+    </div>
+
+</header>
+<body>
+    <div class="recuadro" id="titulo">
+        <center><h1>Usuarios</h1></center>
+    </div>
+
+    <div class="recuadro" id="opciones">
+        <center>
+            <form action="/empresaRep" method="get">
+                <h3>REPRESENTANTE DE LA EMPRESA</h3>
+                <center><img src="../imagenes/REP2.png" alt=""></center>
+                <button class="btnOption btn-primary" id="empresaRep"  >Seleccionar</button>
+            </form>
+        </center>
+        <center>
+            <form action="/evel" method="get">
+                <h3>EVALUADOR</h3>
+                <center><img src="../imagenes/evaluador.png" id="EVL"  alt=""></center>
+                <button class="btnOption btn-primary" id="evel" onclick="window.location.href='/evel'">Seleccionar</button>
+            </form>
+        </center>
+        
+
+    </div>
+    
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <ul style="list-style: none;">
+                    <h3>ACERCA DE CENS</h3>
+                    <li>
+                        <a href="https://cens.cl/sobre-cens/" style="text-decoration:none;">Sobre CENS</a><br>
+                        <a href="https://cens.cl/equipo/" style="text-decoration:none;">Equipo CENS</a><br>
+                        <a href="https://cens.cl/miembros/" style="text-decoration:none;">Miembros</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul style="list-style: none;">
+                    <h3>QUE HACEMOS</h3>
+                    <li>
+                        <a href="https://cens.cl/cursos-y-talleres/" style="text-decoration:none;">Cursos y talleres</a> <br>
+                        <a href="https://cens.cl/asesorias/" style="text-decoration:none;">Asesorias</a> <br>
+                        <a href="https://cens.cl/sellos-y-certificaciones/" style="text-decoration:none;">Sellos y Certificaciones</a><br>
+                        <a href="https://cens.cl/servicios-terminologicos/" style="text-decoration:none;">Sellos Terminologicos</a>
+                        <a href="https://cens.cl/membresia-cens/" style="text-decoration:none;">Membresia</a>
+                    </li>   
+                </ul>
+                
+            </div>
+            <div class="box">
+                <ul style="list-style: none;">
+                    <h3>CONTACTANOS</h3>
+                    <p>Tel +56 2 2978 9664</p>
+                    <p>contacto@cens.cl</p>
+                    <div class="red-social">
+                        <a href="https://www.facebook.com/CENSChile" class="fa fa-facebook" style="text-decoration:none;">
+                            <img src="../imagenes/icon-facebook.png" width="36" height="36">
+                        </a>
+                        <a href="https://www.youtube.com/c/CENSChile" class="fa fa-youtube" style="text-decoration:none;">
+                            <img src="../imagenes/icon-youTube.png" width="36" height="36">
+                        </a>
+                        <a href="https://twitter.com/CENSChile" class="fa fa-twitter" style="text-decoration:none;">
+                            <img src="../imagenes/icon-twitter.png" width="36" height="36">
+                        </a>
+                        <a href="https://www.linkedin.com/company/cens-chile/" class="fa fa-linkedin" style="text-decoration:none;">
+                            <img src="../imagenes/icon-linkedin.png" width="36" height="36">
+                        </a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

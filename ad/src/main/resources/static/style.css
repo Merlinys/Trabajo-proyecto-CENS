@@ -1,0 +1,114 @@
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: xx-large;
+    font-size: 150%;
+    color: #ffffff;
+    background-size: cover;
+    background: url(../imagenes/bannerex.jpg);
+}
+
+
+header{
+    background-color: rgba(138,221,45,0);
+}
+.recuadro{
+    background-color: #EEFFFB;
+    background: rgba(5, 5, 5, 0.007);
+    border-radius: 20px;
+}
+
+
+#titulo{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display:grid;
+    grid-template-columns: [primera]100% [segunda]90% [tercera]60%[end];/*mueve el boton de cerrar sesion*/
+    grid-template-rows: repeat(30[opcion]) [end];
+    width: 80%;
+    margin-top: 40px;
+    margin-left: 10%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+button{
+    font-family:"Lato", sans-serif;
+    font-size: 120%;
+    color:white;
+    border: none;
+    border-radius: 10px; 
+    text-align:end;
+}
+
+button:hover{
+	background: gray; /*cambia de color el hover*/
+}
+
+#opciones {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: grid;
+    color: white;
+    grid-template-columns: [primera]60% repeat(8,16% [opcion]) [end];
+    grid-template-rows: [primera] 115% [segundo] 10% [end];
+    width: 80%;
+    height: 190%;
+    margin-left: 10%;
+    margin-top: 4%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+.btnOption{
+    font-family:"Lato", sans-serif;
+    font-size: 95%;
+    color:#ffffffef;
+    border: none;
+    border-radius: 10px; 
+    background: #0d6efd;
+    text-align:center;
+    height: 2cm;
+    width: 5cm;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+ul h3{
+    color: white;
+}
+ul li a{
+    font-family: "Lato", sans-serif;
+    color: white;
+    margin-bottom: 10px;
+    
+}
+
+.pie-pagina{
+    margin-top: 4%;
+    width: 100vw;
+    text-align: justify;
+    position: absolute;
+    bottom: 50;
+    background-color: rgb(224, 24, 24);
+}
+.pie-pagina .grupo-1{
+    width: 200%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box ul{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-family: "Lato", sans-serif;
+}
+
