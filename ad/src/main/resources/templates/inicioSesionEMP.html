@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +17,7 @@
             <img src="../imagenes/Logo-CENS-e1638186779920.png" class="custom-logo">
         </span>
     </div>
+</header>
 
 <body>
     <div class="formulario">
@@ -24,7 +25,7 @@
             <img src="../imagenes/empresa-icon.png" alt="login-icon">
         </div>
         <h1>Iniciar Sesion</h1>
-        <form method="post">
+        <form  method="post" th:action="@{/inputise}">
             <div class="campos">
                 <input type="text" required>
                 <label>RUT de Empresa</label>
@@ -33,10 +34,10 @@
                 <input type="password" required>
                 <label>Contraseña</label>
             </div>
-            <input type="submit" value="Entrar">
+            <input type="submit" value="Entrar" id="inputise">
         </form>
 
     </div>
-</body>
+    </body>
 </html>
 <!--intenta descubrir como encajar las imagenes en los inputs-->
