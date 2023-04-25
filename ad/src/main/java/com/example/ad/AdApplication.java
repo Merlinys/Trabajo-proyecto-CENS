@@ -57,6 +57,11 @@ public class AdApplication {
 
 
     //Representante Empresa acciones
+
+    @GetMapping("/cerrarrep")
+    public String cerrarRep(Model model){
+        return "inicioSesionEMP";
+    }
     @GetMapping("/loginempresa")
     public String opempr(Model model){
 
