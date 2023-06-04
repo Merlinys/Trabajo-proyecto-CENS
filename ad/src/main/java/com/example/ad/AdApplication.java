@@ -17,6 +17,7 @@ import clases.*;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 import repo.Empresarepo;
+import de.codecentric.boot.admin.server.config.EnableAdminServer;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -25,6 +26,8 @@ import javax.servlet.http.HttpServletRequest;
 @EnableJpaRepositories(basePackages = "com.example.demo.repositories")
 @EntityScan(basePackages = "com.example.demo.entities")
 @Controller
+@EnableAdminServer
+
 public class AdApplication {
     public static void main(String[] args) {
         SpringApplication.run(AdApplication.class, args);
