@@ -11,7 +11,7 @@ public class evaluador {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_evaluador")
-    private int idEvaluador;
+    private int id_evaluador;
 
     @Column(name = "contraseña")
     private String contraseña;
@@ -33,7 +33,8 @@ public class evaluador {
     public evaluador() {
     }
 
-    public evaluador(String contraseña, Empresa repEmpresa, String nombre, String nroContacto, String rol) {
+    public evaluador(int id_evaluador,String contraseña) {
+        this.id_evaluador = id_evaluador;
         this.contraseña = contraseña;
         this.repEmpresa = repEmpresa;
         this.nombre = nombre;
@@ -42,11 +43,11 @@ public class evaluador {
     }
 
     public int getIdEvaluador() {
-        return idEvaluador;
+        return id_evaluador;
     }
 
     public void setIdEvaluador(int idEvaluador) {
-        this.idEvaluador = idEvaluador;
+        this.id_evaluador = idEvaluador;
     }
 
     public String getContraseña() {
