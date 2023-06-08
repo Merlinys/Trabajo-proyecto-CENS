@@ -6,10 +6,11 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 @Entity
 @Table(name = "rep_empresa")
-public class rep_empresa {
+public class Empresa {
 
     @Id
     @Column(name = "rut_empresa", length = 50)
@@ -28,11 +29,11 @@ public class rep_empresa {
     private String nombreEmpresa;
 
     // constructor vacío
-    public rep_empresa() {
+    public Empresa() {
     }
 
     // constructor con parámetros
-    public rep_empresa(String rutEmpresa, String contraseña, String nombre, int nroContacto, String nombreEmpresa) {
+    public Empresa(String rutEmpresa, String contraseña, String nombre, int nroContacto, String nombreEmpresa) {
         this.rutEmpresa = rutEmpresa;
         this.contraseña = contraseña;
         this.nombre = nombre;
