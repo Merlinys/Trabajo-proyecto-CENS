@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="Seleccion_EMP.css" />
+    <title>Evaluar Empresa</title>
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <div class="bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                <img src="imagenes/Logo-CENS-e1638186779920.png" alt="">
+            </div>
+            <div class="list-group list-group-flush my-3"><!--"active" hace que las letras del sidebar se pongan azules-->
+                <a href="#" class="list-group-item list-group-item-action second-text active"><i
+                        class="fas fa-tachometer-alt me-2"></i>Evaluar empresa</a>
+                <a href="#" class="list-group-item list-group-item-action second-text fw-bold"><i
+                        class="fas fa-user me-2"></i>Perfil</a>
+                <a href="#" class="list-group-item list-group-item-action second-text fw-bold"><i
+                        class=""></i>Visualizar Resultados</a>
+                <a href="#" class="list-group-item list-group-item-action second-text fw-bold">
+                    <i class=""></i>Actulizar Resultados</a>
+                <a href="#" class="list-group-item list-group-item-action second-text fw-bold"><i
+                        class=""></i>Descargar NDA</a>
+                <a href="#" class="list-group-item list-group-item-action second-text fw-bold"><i
+                        class=""></i>Seguimiento</a>
+                <a href="#" class="list-group-item list-group-item-action second-text fw-bold"><i
+                        class=""></i>Entregar Sello</a>
+                <a href="#" class="list-group-item list-group-item-action text-danger fw-bold"><i
+                        class="fas fa-power-off me-2"></i>Cerrar Sesion</a>
+            </div>
+        </div>
+
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                    <h1 class="fs-2 m-0">Empresas Disponibles para Evaluar</h1>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user me-2"></i>Nombre Evaluador
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                                <li><a class="dropdown-item" href="#">Menu Principal</a></li>
+                                <li><a class="dropdown-item" href="#">Cerrar Sesion</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container-fluid px-4">
+                <div class="row my-5">
+                    <h3 class="fs-4 mb-3">Estados</h3>
+                    <div class="col">
+                        <table class="table bg-white rounded shadow-sm  table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col" width="350">Representante De Empresa</th>
+                                    <th scope="col">Empresa</th>
+                                    <th scope="col">Estado NDA</th>
+                                    <th scope="col">Estado de la Evaluacion</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Jose Aedo</th>
+                                    <td>Empresa 0</td>
+                                    <td>No Entregado</td>
+                                    <td>No Evaluado</td>
+                                    <td><button class="btn btn-outline-success btn-md" href="">Iniciar Evaluacion</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Antonia Mendez</th>
+                                    <td>Empresa 1</td>
+                                    <td>Entregado</td>
+                                    <td>En evaluacion</td>
+                                    <td><button class="btn btn-outline-success btn-md">Iniciar Evaluacion</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ricardo Martinez</th>
+                                    <td>Empresa 2</td>
+                                    <td>Entregado</td>
+                                    <td>Evaluado</td>
+                                    <td><button class="btn btn-outline-success btn-md" href="">Iniciar Evaluacion</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ignacia Pedreros</th>
+                                    <td>Empresa 3</td>
+                                    <td>No Entregado</td>
+                                    <td>No Evaluado</td>
+                                    <td><button class="btn btn-outline-success btn-md" href="">Iniciar Evaluacion</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Victor Jose Aparicio</th>
+                                    <td>Empresa 4</td>
+                                    <td>No Entregado</td>
+                                    <td>No Evaluado</td>
+                                    <td><button class="btn btn-outline-success btn-md" href="">Iniciar Evaluacion</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Eva Maria Alba</th>
+                                    <td>Empresa 5</td>
+                                    <td>Entregado</td>
+                                    <td>En evaluacion</td>
+                                    <td><button class="btn btn-outline-success btn-md" href="">Iniciar Evaluacion</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Feliciano Sanz</th>
+                                    <td>Empresa 6</td>
+                                    <td>Entregado</td>
+                                    <td>En evaluacion</td>
+                                    <td><button class="btn btn-outline-success btn-md" href="">Iniciar Evaluacion</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Maria Montoro</th>
+                                    <td>Empresa 7</td>
+                                    <td>Entregado</td>
+                                    <td>Evaluado</td>
+                                    <td><button class="btn btn-outline-success btn-md" href="">Iniciar Evaluacion</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Juan Maria Casas</th>
+                                    <td>Empresa 8</td>
+                                    <td>No Entregado</td>
+                                    <td>No Evaluado</td>
+                                    <td><button class="btn btn-outline-success btn-md" href="">Iniciar Evaluacion</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var el = document.getElementById("wrapper");
+        var toggleButton = document.getElementById("menu-toggle");
+
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+    
+</body>
+</html>
