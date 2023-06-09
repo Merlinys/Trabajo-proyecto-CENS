@@ -18,7 +18,7 @@ public class evaluador {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "fk_rut_representantes")
-    private Empresa repEmpresa;
+    private rep_Empresa repRepEmpresa;
 
     @Column(name = "nombre")
     private String nombre;
@@ -36,7 +36,7 @@ public class evaluador {
     public evaluador(int id_evaluador,String contraseña) {
         this.id_evaluador = id_evaluador;
         this.contraseña = contraseña;
-        this.repEmpresa = repEmpresa;
+        this.repRepEmpresa = repRepEmpresa;
         this.nombre = nombre;
         this.nroContacto = nroContacto;
         this.rol = rol;
@@ -58,12 +58,12 @@ public class evaluador {
         this.contraseña = contraseña;
     }
 
-    public Empresa getRepEmpresa() {
-        return repEmpresa;
+    public rep_Empresa getRepEmpresa() {
+        return repRepEmpresa;
     }
 
-    public void setRepEmpresa(Empresa repEmpresa) {
-        this.repEmpresa = repEmpresa;
+    public void setRepEmpresa(rep_Empresa repRepEmpresa) {
+        this.repRepEmpresa = repRepEmpresa;
     }
 
     public String getNombre() {
