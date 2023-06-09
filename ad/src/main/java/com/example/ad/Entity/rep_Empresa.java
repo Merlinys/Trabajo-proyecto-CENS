@@ -1,4 +1,4 @@
-package com.example.ad.Entity;
+package clases;
 
 
 //Clase que representa la clase rep_empresa de la bdd
