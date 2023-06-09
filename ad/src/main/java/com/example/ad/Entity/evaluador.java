@@ -1,6 +1,4 @@
-package com.example.ad.Entity;
-
-import com.example.ad.Entity.rep_Empresa;
+package clases;
 
 import javax.persistence.*;
 
