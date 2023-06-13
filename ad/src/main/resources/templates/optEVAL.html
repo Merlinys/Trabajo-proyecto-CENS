@@ -20,19 +20,20 @@
     <div class="recuadro" id="opciones">
         <p id="labelOpciones">Opciones <br> Evaluador</p>
         <center>
-            <form>
+            <form action="/PerfilUser" method="get">
                 <h3>Perfil</h3>
-                <button class="btnOpcion btn-primary" type="button" id="btPerfil"></button>
+                <button class="btnOpcion btn-primary" id="btPerfil"></button>
             </form>
         </center> 
         
         <center>
-            <form>
+            <form method="get" action="/EvaluarEmpresa">
                 <h3>Evaluar empresa</h3>
-                <button class = "btnOpcion btn-primary" type="button"  id="btevalEmp"></button>
+                <button class = "btnOpcion btn-primary"   id="btevalEmp"></button>
+            </form>
                 <h3 class="title-1">Seguimiento</h3>
                 <button class="btnOpcion btn-primary" type="button" id="btTrack"></button>
-            </form>
+
         </center>
         
         <center>
@@ -52,9 +53,9 @@
         </center>
 
         <center>
-            <form>
+            <form method="get" action="/VisualizarResultados">
                 <h3>Visualizar resultados</h3>
-                <button class="btnOpcion btn-primary" type="button" id="btVer"></button>
+                <button class="btnOpcion btn-primary"  id="btVer"></button>
             </form>
         </center>
     </div>

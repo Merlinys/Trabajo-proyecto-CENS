@@ -13,10 +13,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import clases.*;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
-import repo.Empresarepo;
 import de.codecentric.boot.admin.server.config.EnableAdminServer;
 
 import javax.servlet.http.HttpServletRequest;
@@ -39,6 +37,7 @@ public class AdApplication {
 
         return "index";
     }
+
     //boton representante empresa
     @GetMapping("/empresaRep")
     public String empresaRep(Model model) {
@@ -58,11 +57,40 @@ public class AdApplication {
         return "optEVAL";
     }
 
+    @GetMapping("/EvaluarEmpresa")
+    public String EVALEP(Model model){
+
+        return "selec_evalEMP";
+    }
+    @GetMapping("/evaluacion")
+    public String evalev(Model model){
+
+        return "evaluacion";
+    }
+
+    @GetMapping("/graficos")
+    public String evalgrap(Model model){
+
+        return "graphs";
+    }
+
+    @GetMapping("/PerfilUser")
+    public String EVALP(Model model){
+
+        return "profileEVAL";
+    }
+
+    @GetMapping("/VisualizarResultados")
+    public String EVALVR(Model model){
+
+        return "select_evalGraph";
+    }
 
     //Representante Empresa acciones
 
     @GetMapping("/cerrarrep")
     public String cerrarRep(Model model){
+
         return "inicioSesionEMP";
     }
     @GetMapping("/loginempresa")
