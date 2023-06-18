@@ -24,13 +24,13 @@
             <img src="../imagenes/login-icon.png" alt="login-icon">
         </div>
         <h1>Iniciar Sesion</h1>
-        <form method="Get" action = "/ieeval">
+        <form action ="LoginEvaluador" method="post">
             <div class="campos">
-                <input type="text" required>
-                <label>Nombre de Usuario</label>
+                <input type="text" name="IdEvaluador" required>
+                <label>Id Evaluador</label>
             </div>
             <div class="campos">
-                <input type="password" required>
+                <input type="password" name="pass" required>
                 <label>Contraseña</label>
             </div>
             <input type="submit" value="Entrar" id="iseval">
