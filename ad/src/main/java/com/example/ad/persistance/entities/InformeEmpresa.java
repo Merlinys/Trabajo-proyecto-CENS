@@ -12,6 +12,7 @@ import lombok.Setter;
 public class InformeEmpresa {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "idInforme")
     private int idInforme;
 
@@ -98,11 +99,12 @@ public class InformeEmpresa {
     @JoinColumn(name = "fk_id_evaluador")
     private Evaluador evaluador;
 
-    public InformeEmpresa(int idInforme, int eficienciaEficacia, int seguridadAsistencial, int centroPaciente, int interoperabilidad,
-                          int pruebasUsuario, int erroresUsuario, int capacidadAprendizaje, int accesibilidad, int toleranciaFallos,
-                          int capacidadRecuperacion, int arquitectura, int otrosAspectos, int autenticacion, int autorizacion, int criptografia,
-                          int gestionContrasenas, int integridad, int autenticidad, int gestionRiesgo, int documentacion, double procesoClinico, double compatibilidad,
-                          double usabilidad, double fiabilidad, double seguridad, RepEmpresa repRepEmpresa, Evaluador evaluador) {
+    public InformeEmpresa() {
+    }
+
+    public InformeEmpresa(int idInforme, int eficienciaEficacia, int seguridadAsistencial, int centroPaciente, int interoperabilidad, int pruebasUsuario, int erroresUsuario, int capacidadAprendizaje, int accesibilidad, int toleranciaFallos, int capacidadRecuperacion, int arquitectura, int otrosAspectos, int autenticacion, int autorizacion, int criptografia, int gestionContrasenas, int integridad, int autenticidad,
+                          int gestionRiesgo, int documentacion, double procesoClinico, double compatibilidad, double usabilidad, double fiabilidad,
+                          double seguridad, RepEmpresa repRepEmpresa, Evaluador evaluador) {
         this.idInforme = idInforme;
         this.eficienciaEficacia = eficienciaEficacia;
         this.seguridadAsistencial = seguridadAsistencial;

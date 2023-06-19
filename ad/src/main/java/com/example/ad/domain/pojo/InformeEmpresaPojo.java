@@ -2,6 +2,8 @@ package com.example.ad.domain.pojo;
 
 import com.example.ad.persistance.entities.Evaluador;
 import com.example.ad.persistance.entities.RepEmpresa;
+import jakarta.persistence.Column;
+import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -35,6 +37,5 @@ public class InformeEmpresaPojo {
     private double usabilidad;
     private double fiabilidad;
     private double seguridad;
-    private RepEmpresa repRepEmpresa;
-    private Evaluador evaluador;
+
 }

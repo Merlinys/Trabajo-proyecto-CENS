@@ -2,6 +2,7 @@ package com.example.ad.persistance.CrudrepositorioEntity;
 
 import com.example.ad.domain.Repositorio.iRepositorioInformeEmpresa;
 import com.example.ad.domain.pojo.InformeEmpresaPojo;
+import com.example.ad.persistance.entities.InformeEmpresa;
 import com.example.ad.persistance.mapper.iInformeEmpresaMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +13,7 @@ import java.util.Optional;
 
 @Repository
 @RequiredArgsConstructor
-public class RepositorioInformeEmpresa implements iRepositorioInformeEmpresa {
+public class    RepositorioInformeEmpresa implements iRepositorioInformeEmpresa {
 
 
     private final ICrudRepositorioInformeEmpresa iCrudRepositorioInformeEmpresa;
@@ -31,6 +32,7 @@ public class RepositorioInformeEmpresa implements iRepositorioInformeEmpresa {
 
     @Override
     public InformeEmpresaPojo save(InformeEmpresaPojo newinformeEmpresa) {
-        return null;
+        InformeEmpresa informeEmpresa = informeEmpresaMapper.toInformeEmpresa(newinformeEmpresa);
+        return informeEmpresaMapper.toInformeEmpresaPojo(iCrudRepositorioInformeEmpresa.save(informeEmpresa));
     }
 }

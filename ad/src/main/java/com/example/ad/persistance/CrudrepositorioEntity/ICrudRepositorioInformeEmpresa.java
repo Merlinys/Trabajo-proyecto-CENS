@@ -9,5 +9,4 @@ import java.util.Optional;
 
 public interface ICrudRepositorioInformeEmpresa extends JpaRepository<InformeEmpresa,Integer> {
 
-
 }

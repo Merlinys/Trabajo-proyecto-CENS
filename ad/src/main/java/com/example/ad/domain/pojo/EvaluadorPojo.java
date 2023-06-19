@@ -10,7 +10,7 @@ public class EvaluadorPojo {
 
     private int idEvaluador;
     private String contraseña;
-    private RepEmpresa repRepEmpresa;
+
     private String nombre;
     private String nroContacto;
     private String rol;
