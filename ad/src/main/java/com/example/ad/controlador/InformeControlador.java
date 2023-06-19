@@ -26,7 +26,7 @@ public class InformeControlador {
 
     @GetMapping(path= "/{id}")
     public ResponseEntity<InformeEmpresaPojo> getIdInforme(Integer id){
-        return ResponseEntity.of(servicioInformeEmpresa.getIdInforme(id));
+        return ResponseEntity.of(servicioInformeEmpresa.getidInforme(id));
     }
 
     @PostMapping()

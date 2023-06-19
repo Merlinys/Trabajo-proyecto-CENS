@@ -20,8 +20,8 @@ public class InformeEmpresaServicio implements iServicioInformeEmpresa{
     }
 
     @Override
-    public Optional<InformeEmpresaPojo> getIdInforme(Integer id) {
-        return RepositorioInformeEmpresa.getIdInforme(id);
+    public Optional<InformeEmpresaPojo> getidInforme(Integer id) {
+        return RepositorioInformeEmpresa.getidInforme(id);
     }
 
 
@@ -30,4 +30,10 @@ public class InformeEmpresaServicio implements iServicioInformeEmpresa{
 
         return RepositorioInformeEmpresa.save(newinformeEmpresa);
     }
+
+    @Override
+    public Optional<InformeEmpresaPojo> getrutEmpresa(String rut) {
+        return Optional.empty();
+    }
+
 }

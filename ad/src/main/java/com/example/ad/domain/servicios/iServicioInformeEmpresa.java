@@ -8,8 +8,9 @@ import java.util.Optional;
 public interface iServicioInformeEmpresa {
     List<InformeEmpresaPojo> getAll();
 
-    Optional<InformeEmpresaPojo> getIdInforme(Integer id);
+    Optional<InformeEmpresaPojo> getidInforme(Integer id);
 
     InformeEmpresaPojo save(InformeEmpresaPojo newinformeEmpresa);
 
+    Optional<InformeEmpresaPojo> getrutEmpresa(String rut);
 }

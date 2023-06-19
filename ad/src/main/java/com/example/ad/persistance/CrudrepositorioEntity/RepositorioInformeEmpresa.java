@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @Repository
 @RequiredArgsConstructor
-public class    RepositorioInformeEmpresa implements iRepositorioInformeEmpresa {
+public class RepositorioInformeEmpresa implements iRepositorioInformeEmpresa {
 
 
     private final ICrudRepositorioInformeEmpresa iCrudRepositorioInformeEmpresa;
@@ -25,14 +25,23 @@ public class    RepositorioInformeEmpresa implements iRepositorioInformeEmpresa 
     }
 
     @Override
-    public Optional<InformeEmpresaPojo> getIdInforme(Integer id) {
+    public Optional<InformeEmpresaPojo> getidInforme(Integer id) {
         return iCrudRepositorioInformeEmpresa.findById(id)
                 .map(informeEmpresaMapper::toInformeEmpresaPojo);
     }
+
 
     @Override
     public InformeEmpresaPojo save(InformeEmpresaPojo newinformeEmpresa) {
         InformeEmpresa informeEmpresa = informeEmpresaMapper.toInformeEmpresa(newinformeEmpresa);
         return informeEmpresaMapper.toInformeEmpresaPojo(iCrudRepositorioInformeEmpresa.save(informeEmpresa));
     }
+
+    @Override
+    public Optional<InformeEmpresaPojo> getrutEmpresa(String rut) {
+        return iCrudRepositorioInformeEmpresa.findByRepRepEmpresa_RutEmpresa(rut)
+                .map(informeEmpresaMapper::toInformeEmpresaPojo);
+    }
+
+
 }
