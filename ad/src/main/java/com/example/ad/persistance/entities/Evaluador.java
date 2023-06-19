@@ -4,9 +4,6 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-//Clase que representa la clase evaluador de la bdd
-
-
 @Getter
 @Setter
 
@@ -39,8 +36,8 @@ public class Evaluador {
     public Evaluador() {
     }
 
-    public Evaluador(int id_evaluador, String contraseña) {
-        this.idEvaluador = id_evaluador;
+    public Evaluador(int idEvaluador, String contraseña, RepEmpresa repRepEmpresa, String nombre, String nroContacto, String rol) {
+        this.idEvaluador = idEvaluador;
         this.contraseña = contraseña;
         this.repRepEmpresa = repRepEmpresa;
         this.nombre = nombre;
