@@ -8,7 +8,10 @@ import java.util.Optional;
 public interface iRepositorioInformeEmpresa {
     List<InformeEmpresaPojo> getAll();
 
+    Optional<InformeEmpresaPojo> getIdInforme(Integer id);
+
     InformeEmpresaPojo save(InformeEmpresaPojo newinformeEmpresa);
+
 
 
 }

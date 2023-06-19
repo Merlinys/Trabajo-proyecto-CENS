@@ -9,7 +9,7 @@ import lombok.Setter;
 public class RepEmpresaPojo {
 
     private String rutEmpresa;
-    private String contraseña;
+    private String contrasena;
     private String nombre;
     private int nroContacto;
     private String nombreEmpresa;

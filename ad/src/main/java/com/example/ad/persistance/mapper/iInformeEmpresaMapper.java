@@ -9,8 +9,8 @@ import java.util.List;
 
 @Mapper(componentModel = "spring")
 public interface iInformeEmpresaMapper {
-    InformeEmpresaPojo toInformeEmpresa(InformeEmpresa informeEmpresa);
-    InformeEmpresa toInformeEmpresaPojo(InformeEmpresaPojo informeEmpresaPojo);
+    InformeEmpresaPojo toInformeEmpresaPojo(InformeEmpresa informeEmpresa);
+    InformeEmpresa toInformeEmpresa(InformeEmpresaPojo informeEmpresaPojo);
     List<InformeEmpresaPojo> toInformeEmpresaPojo(List<InformeEmpresa> informeEmpresas);
 
 }
