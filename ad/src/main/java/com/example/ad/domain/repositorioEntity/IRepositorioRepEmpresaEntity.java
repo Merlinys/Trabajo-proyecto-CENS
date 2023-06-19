@@ -10,6 +10,10 @@ public interface IRepositorioRepEmpresaEntity  extends JpaRepository<RepEmpresa,
     @Query("select r from RepEmpresa r where r.rutEmpresa = ?1")
     Optional<RepEmpresa> findByRutEmpresa(String rutEmpresa);
 
+    /* Existe 2 formas de representar lo de abajo usando optional y no , con optional
+        es por si no existe , si se escribe sin el optional tiene que si o si existir
+     */
+    // busca un representante empresa por el id(String) y la contraseña (string)
     Optional<RepEmpresa> findByRutEmpresaAndContrasena(String id, String pass);
 
 

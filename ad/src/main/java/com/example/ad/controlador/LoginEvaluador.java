@@ -18,7 +18,7 @@ public class LoginEvaluador {
             return "optEVAL";
         }
         else{
-            return "inicioSesionEMP";
+            return "inicioSesionEVAL";
         }
     }
 }
