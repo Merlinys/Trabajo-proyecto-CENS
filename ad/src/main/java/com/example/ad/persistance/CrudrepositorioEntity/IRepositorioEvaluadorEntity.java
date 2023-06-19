@@ -1,4 +1,4 @@
-package com.example.ad.domain.repositorioEntity;
+package com.example.ad.persistance.CrudrepositorioEntity;
 
 import com.example.ad.persistance.entities.Evaluador;
 import org.springframework.data.jpa.repository.JpaRepository;

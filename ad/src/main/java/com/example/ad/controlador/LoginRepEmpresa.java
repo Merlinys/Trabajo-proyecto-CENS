@@ -1,13 +1,10 @@
 package com.example.ad.controlador;
 
-import com.example.ad.persistance.entities.RepEmpresa;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
-import com.example.ad.domain.repositorioEntity.IRepositorioRepEmpresaEntity;
+import com.example.ad.persistance.CrudrepositorioEntity.IRepositorioRepEmpresaEntity;
 import org.springframework.web.bind.annotation.RequestParam;
-
-import java.util.Optional;
 
 @RequiredArgsConstructor
 @Controller

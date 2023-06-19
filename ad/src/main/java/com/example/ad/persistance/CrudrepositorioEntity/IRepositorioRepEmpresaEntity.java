@@ -1,4 +1,4 @@
-package com.example.ad.domain.repositorioEntity;
+package com.example.ad.persistance.CrudrepositorioEntity;
 
 import com.example.ad.persistance.entities.RepEmpresa;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -15,6 +15,7 @@ public interface IRepositorioRepEmpresaEntity  extends JpaRepository<RepEmpresa,
      */
     // busca un representante empresa por el id(String) y la contraseña (string)
     Optional<RepEmpresa> findByRutEmpresaAndContrasena(String id, String pass);
+
 
 
 }
