@@ -48,4 +48,3 @@ public class Evaluador {
         this.rol = rol;
     }
 }
-
