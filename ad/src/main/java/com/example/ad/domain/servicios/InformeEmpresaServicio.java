@@ -31,9 +31,6 @@ public class InformeEmpresaServicio implements iServicioInformeEmpresa{
         return RepositorioInformeEmpresa.save(newinformeEmpresa);
     }
 
-    @Override
-    public Optional<InformeEmpresaPojo> getrutEmpresa(String rut) {
-        return Optional.empty();
-    }
+
 
 }

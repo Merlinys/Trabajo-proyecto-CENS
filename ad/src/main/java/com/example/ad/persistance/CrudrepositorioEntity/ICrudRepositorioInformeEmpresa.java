@@ -9,7 +9,7 @@ import java.util.stream.DoubleStream;
 
 
 public interface ICrudRepositorioInformeEmpresa extends JpaRepository<InformeEmpresa,Integer> {
-    Optional<InformeEmpresa> findByRepRepEmpresa_RutEmpresa(String rutEmpresa);
+
 
 
 

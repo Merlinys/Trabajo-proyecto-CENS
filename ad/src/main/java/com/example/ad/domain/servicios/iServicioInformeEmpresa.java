@@ -12,5 +12,5 @@ public interface iServicioInformeEmpresa {
 
     InformeEmpresaPojo save(InformeEmpresaPojo newinformeEmpresa);
 
-    Optional<InformeEmpresaPojo> getrutEmpresa(String rut);
+
 }

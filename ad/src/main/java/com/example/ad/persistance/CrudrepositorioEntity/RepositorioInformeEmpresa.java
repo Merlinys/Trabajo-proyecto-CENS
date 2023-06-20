@@ -37,11 +37,7 @@ public class RepositorioInformeEmpresa implements iRepositorioInformeEmpresa {
         return informeEmpresaMapper.toInformeEmpresaPojo(iCrudRepositorioInformeEmpresa.save(informeEmpresa));
     }
 
-    @Override
-    public Optional<InformeEmpresaPojo> getrutEmpresa(String rut) {
-        return iCrudRepositorioInformeEmpresa.findByRepRepEmpresa_RutEmpresa(rut)
-                .map(informeEmpresaMapper::toInformeEmpresaPojo);
-    }
+
 
 
 }

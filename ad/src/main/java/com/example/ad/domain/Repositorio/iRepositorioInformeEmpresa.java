@@ -12,7 +12,7 @@ public interface iRepositorioInformeEmpresa {
 
     InformeEmpresaPojo save(InformeEmpresaPojo newinformeEmpresa);
 
-    Optional<InformeEmpresaPojo> getrutEmpresa(String rut);
+
 
 
 }
