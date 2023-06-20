@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,11 +12,11 @@
     <title>Evaluador Opciones</title>
 </head>
 <body>
-    <div class = "recuadro" id="user">
-        <p>Usuario:</p><br>
-        <p>Fecha:</p>
-        <input class = "boton" type="button" disabled value="Cerrar sesion" id="btlogout" >
-    </div> 
+    <div class="recuadro" id="user">
+        <p>Usuario: <span th:text="${userId}"></span></p><br>
+        <p>Fecha: <span th:text="${#temporals.format(#temporals.createNow(), 'dd-MM-yyyy')}"></span></p>
+        <input class="boton" type="button" disabled value="Cerrar sesión" id="btlogout">
+    </div>
     <div class="recuadro" id="opciones">
         <p id="labelOpciones">Opciones <br> Evaluador</p>
         <center>
