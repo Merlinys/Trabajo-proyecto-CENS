@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class Controladortesteo {
     @GetMapping("/inicio")
     public String test(Model model){
+
         return "evaluacion";
     }
 

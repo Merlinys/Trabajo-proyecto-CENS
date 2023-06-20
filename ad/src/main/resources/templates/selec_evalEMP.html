@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -80,70 +80,12 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">Jose Aedo</th>
-                                    <td>Empresa 0</td>
+                                <tr th:each="empresa:${empresas}">
+                                    <th scope="row" th:text="${empresa.nombre}"></th>
+                                    <td th:text="${empresa.nombreEmpresa}"></td>
                                     <td>No Entregado</td>
                                     <td>No Evaluado</td>
-                                    <form action="/inicio" method="get">
-                                    <td><button class="btn btn-outline-success btn-md" href="">Iniciar Evaluacion</button></td>
-                                    </form>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Antonia Mendez</th>
-                                    <td>Empresa 1</td>
-                                    <td>Entregado</td>
-                                    <td>En evaluacion</td>
-                                    <td><button class="btn btn-outline-success btn-md">Iniciar Evaluacion</button></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Ricardo Martinez</th>
-                                    <td>Empresa 2</td>
-                                    <td>Entregado</td>
-                                    <td>Evaluado</td>
-                                    <td><button class="btn btn-outline-success btn-md" href="">Iniciar Evaluacion</button></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Ignacia Pedreros</th>
-                                    <td>Empresa 3</td>
-                                    <td>No Entregado</td>
-                                    <td>No Evaluado</td>
-                                    <td><button class="btn btn-outline-success btn-md" href="">Iniciar Evaluacion</button></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Victor Jose Aparicio</th>
-                                    <td>Empresa 4</td>
-                                    <td>No Entregado</td>
-                                    <td>No Evaluado</td>
-                                    <td><button class="btn btn-outline-success btn-md" href="">Iniciar Evaluacion</button></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Eva Maria Alba</th>
-                                    <td>Empresa 5</td>
-                                    <td>Entregado</td>
-                                    <td>En evaluacion</td>
-                                    <td><button class="btn btn-outline-success btn-md" href="">Iniciar Evaluacion</button></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Feliciano Sanz</th>
-                                    <td>Empresa 6</td>
-                                    <td>Entregado</td>
-                                    <td>En evaluacion</td>
-                                    <td><button class="btn btn-outline-success btn-md" href="">Iniciar Evaluacion</button></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Maria Montoro</th>
-                                    <td>Empresa 7</td>
-                                    <td>Entregado</td>
-                                    <td>Evaluado</td>
-                                    <td><button class="btn btn-outline-success btn-md" href="">Iniciar Evaluacion</button></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Juan Maria Casas</th>
-                                    <td>Empresa 8</td>
-                                    <td>No Entregado</td>
-                                    <td>No Evaluado</td>
-                                    <td><button class="btn btn-outline-success btn-md" href="">Iniciar Evaluacion</button></td>
+                                    <td><form action="inicio" method="get"> <button class="btn btn-outline-success btn-md" href="">Iniciar Evaluacion</button></form></td>
                                 </tr>
                             </tbody>
                         </table>
