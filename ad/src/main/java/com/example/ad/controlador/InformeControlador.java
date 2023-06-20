@@ -2,10 +2,8 @@ package com.example.ad.controlador;
 
 import com.example.ad.domain.pojo.InformeEmpresaPojo;
 import com.example.ad.domain.servicios.iServicioInformeEmpresa;
-import com.example.ad.persistance.entities.InformeEmpresa;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

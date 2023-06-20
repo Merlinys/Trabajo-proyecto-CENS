@@ -1,6 +1,5 @@
 package com.example.ad.domain.pojo;
 
-import com.example.ad.persistance.entities.RepEmpresa;
 import lombok.Getter;
 import lombok.Setter;
 
