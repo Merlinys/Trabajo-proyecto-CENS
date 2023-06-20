@@ -12,11 +12,16 @@
     <title>Evaluador Opciones</title>
 </head>
 <body>
-    <div class="recuadro" id="user">
-        <p>Usuario: <span th:text="${userId}"></span></p><br>
-        <p>Fecha: <span th:text="${#temporals.format(#temporals.createNow(), 'dd-MM-yyyy')}"></span></p>
-        <input class="boton" type="button" disabled value="Cerrar sesión" id="btlogout">
-    </div>
+<div class="recuadro" id="user">
+    <table>
+        <tr th:each="empresa : ${empresas}">
+            <td><span style="color: white;">Usuario:</span> <span style="color: white;" th:text="${empresa.nombre}"></span></td>
+        </tr>
+    </table>
+    <br>
+    <p>Fecha: <span th:text="${#temporals.format(#temporals.createNow(), 'dd-MM-yyyy')}"></span></p>
+    <input class="boton" type="button" disabled value="Cerrar sesión" id="btlogout">
+</div>
     <div class="recuadro" id="opciones">
         <p id="labelOpciones">Opciones <br> Evaluador</p>
         <center>
@@ -31,8 +36,10 @@
                 <h3>Evaluar empresa</h3>
                 <button class = "btnOpcion btn-primary"   id="btevalEmp"></button>
             </form>
+            <form action="/Seguimiento" method="get">
                 <h3 class="title-1">Seguimiento</h3>
-                <button class="btnOpcion btn-primary" type="button" id="btTrack"></button>
+                <button class="btnOpcion btn-primary"  id="btTrack"></button>
+            </form>
 
         </center>
         

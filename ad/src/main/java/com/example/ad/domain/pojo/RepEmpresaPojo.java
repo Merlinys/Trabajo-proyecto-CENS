@@ -13,5 +13,5 @@ public class RepEmpresaPojo {
     private String nombre;
     private int nroContacto;
     private String nombreEmpresa;
-
+    private String rut;
 }

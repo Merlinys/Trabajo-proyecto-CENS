@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="Seleccion_EMP.css" />
     <title>Evaluar Empresa</title>
+    <script src="https://kit.fontawesome.com/5a6ef4d9a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="d-flex" id="wrapper">
@@ -20,16 +21,16 @@
                         class="fas fa-tachometer-alt me-2"></i>Evaluar empresa</a>
                 <a href="#" class="list-group-item list-group-item-action second-text fw-bold"><i
                         class="fas fa-user me-2"></i>Perfil</a>
-                <a href="#" class="list-group-item list-group-item-action second-text fw-bold"><i
-                        class=""></i>Visualizar Resultados</a>
+                <a th:href="@{/visualizarGraficos}" class="list-group-item list-group-item-action second-text fw-bold"><i
+                        class="fa-solid fa-chart-simple me-2"></i>Ver Resultados</a>
                 <a href="#" class="list-group-item list-group-item-action second-text fw-bold">
-                    <i class=""></i>Actulizar Resultados</a>
+                    <i class="fa-solid fa-file-pen me-2"></i>Actulizar Resultados</a>
                 <a href="#" class="list-group-item list-group-item-action second-text fw-bold"><i
-                        class=""></i>Descargar NDA</a>
+                        class="fa-solid fa-file-arrow-down me-2"></i>Descargar NDA</a>
+                <a th:href="@{/Seguimiento}" class="list-group-item list-group-item-action second-text fw-bold"><i
+                        class="fa-solid fa-eye me-2"></i>Seguimiento</a>
                 <a href="#" class="list-group-item list-group-item-action second-text fw-bold"><i
-                        class=""></i>Seguimiento</a>
-                <a href="#" class="list-group-item list-group-item-action second-text fw-bold"><i
-                        class=""></i>Entregar Sello</a>
+                        class="fa-solid fa-hands-holding-circle me-2"></i>Entregar Sello</a>
                 <a href="#" class="list-group-item list-group-item-action text-danger fw-bold"><i
                         class="fas fa-power-off me-2"></i>Cerrar Sesion</a>
             </div>
@@ -52,8 +53,8 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-user me-2"></i>Nombre Evaluador
+                               role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user me-2"></i><span th:text="${empresas[0].nombre}">Nombre Representante</span>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Perfil</a></li>
@@ -80,13 +81,20 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr th:each="empresa:${empresas}">
-                                    <th scope="row" th:text="${empresa.nombre}"></th>
-                                    <td th:text="${empresa.nombreEmpresa}"></td>
-                                    <td>No Entregado</td>
-                                    <td>No Evaluado</td>
-                                    <td><form action="inicio" method="get"> <button class="btn btn-outline-success btn-md" href="">Iniciar Evaluacion</button></form></td>
-                                </tr>
+                            <tr>
+                                <th scope="row" >Roberto Carlos</th>
+                                <td>Empresa F</td>
+                                <td>Entregado</td>
+                                <td>Evaluado</td>
+                                <td><form action = "/verEvaluacion1" method="get"> <button class="btn btn-outline-success btn-md" href="">Iniciar Evaluacion</button></form></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" >Juan Diaz</th>
+                                <td>Empresa 2</td>
+                                <td>Entregado</td>
+                                <td>Evaluado</td>
+                                <td><form action = "/verEvaluacion2" method="get"> <button class="btn btn-outline-success btn-md" href="">Iniciar Evaluacion</button></form></td>
+                            </tr>
                             </tbody>
                         </table>
                     </div>

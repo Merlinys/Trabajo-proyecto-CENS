@@ -1,8 +1,11 @@
 package com.example.ad.controlador;
 
 import com.example.ad.domain.pojo.InformeEmpresaPojo;
+import com.example.ad.domain.servicios.iEvaluadorServicio;
 import com.example.ad.domain.servicios.iServicioInformeEmpresa;
+import com.example.ad.persistance.entities.Evaluador;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -17,22 +20,27 @@ import java.util.List;
 public class ControladorEvaluacion {
 
     private final iServicioInformeEmpresa servicioInformeEmpresa;
+    @Autowired
+    private iEvaluadorServicio evaluadorServicio;
 
-    @GetMapping("/inicio")
-    public String test(Model model){
-
+    @GetMapping("/verEvaluacion1")
+    public String evalua1(Model model){
+        List<Evaluador> evaluadors = evaluadorServicio.listar();
+        model.addAttribute("empresas",evaluadors);
         return "evaluacion";
     }
-    @PostMapping("/funcionaono")
-    public ResponseEntity<InformeEmpresaPojo> save(@RequestBody InformeEmpresaPojo informeEmpresaPojonew){
-        try {
-            return ResponseEntity.status(HttpStatus.CREATED)
-                    .body(servicioInformeEmpresa.save(informeEmpresaPojonew));
-
-        }catch (Exception a){
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
-        }
+    @GetMapping("/verEvaluacion2")
+    public String evalua(Model model){
+        List<Evaluador> evaluadors = evaluadorServicio.listar();
+        model.addAttribute("empresas",evaluadors);
+        return "evaluacion2.1";
     }
 
+    @GetMapping("/vuelta")
+    public String vuelta(Model model){
+        List<Evaluador> evaluadors = evaluadorServicio.listar();
+        model.addAttribute("empresas",evaluadors);
+        return "selec_evalEMP";
+    }
     }
 

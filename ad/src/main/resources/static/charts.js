@@ -3,7 +3,7 @@ const data = {
   labels: ['Proceso Clinico', 'Interoperabilidad', 'Usabilidad', 'Fiabilidad', 'Seguridad'],
   datasets: [{
     label: 'Graficos Generales',
-    data: [1.88, 1.75, 1.56, 1.75 , 1.75],
+    data: [1.25, 2, 1.75, 2 , 1.75],
     backgroundColor:[
       'rgba(255, 26, 104, 0.2)',
       'rgba(255, 26, 104, 0.2)',
@@ -65,7 +65,7 @@ const dataGraph2 = {
   labels: ['Proceso Clinico', 'Interoperabilidad', 'Usabilidad', 'Fiabilidad', 'Seguridad'],
   datasets: [{
     label: 'Graficos Generales',
-    data: [69.00, 75.00, 50.00, 60.00, 59.00],
+    data: [65.00, 80.00, 77.00, 80.00, 77.00],
     backgroundColor: [
       'rgba(54, 162, 235, 0.2)',
       'rgba(54, 162, 235, 0.2)',
@@ -132,17 +132,17 @@ const dataGraph3 = {
   labels: ['Plat 2','Plat 3','Plat 4','Plat 5'],
   datasets: [{
     label: 'Aspectos Calidad Cens',
-    data: [73.00, 64.00, 59.00, 45.00],
+    data: [65.00, 80.00, 77.00, 80.00, 77.00],
     backgroundColor: 'rgba(54, 162, 235, 0.2)',
     borderColor: 'rgba(0, 0, 0, 1)',
     borderWidth: 1
-  },{
+  },/*{
     label: 'Aspectos Tecnicos Fonasa',
     data: [76.00, 76.00 , 52.00, 48.00],
     backgroundColor:'rgba(255, 159, 64, 0.2)',
     borderColor:'rgba(0, 0, 0, 1)',
     borderWidth: 1
-  }]
+  }*/]
 };
 
 const config3 = {

@@ -33,17 +33,21 @@ public class RepEmpresa {
     @Column(name = "nombre_empresa", length = 45)
     private String nombreEmpresa;
 
+    @Column(name = "rut", length = 45)
+    private String rut;
     // constructor vacío
     public RepEmpresa() {
     }
 
     // constructor con parámetros
-    public RepEmpresa(String rutEmpresa, String contraseña, String nombre, int nroContacto, String nombreEmpresa) {
+    public RepEmpresa(String rutEmpresa, String contraseña, String nombre, int nroContacto, String nombreEmpresa,String rut) {
         this.rutEmpresa = rutEmpresa;
         this.contrasena = contraseña;
         this.nombre = nombre;
         this.nroContacto = nroContacto;
         this.nombreEmpresa = nombreEmpresa;
+        this.rut = rut;
+
     }
 
 
