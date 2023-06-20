@@ -14,6 +14,7 @@ public class InformeEmpresaPojo {
     private int idInforme;
     private int eficienciaEficacia;
     private int seguridadAsistencial;
+    private int registroClinico;
     private int centroPaciente;
     private int interoperabilidad;
     private int pruebasUsuario;
@@ -32,6 +33,7 @@ public class InformeEmpresaPojo {
     private int autenticidad;
     private int gestionRiesgo;
     private int documentacion;
+    private int eficienciaDeDesempeño;
     private double procesoClinico;
     private double compatibilidad;
     private double usabilidad;

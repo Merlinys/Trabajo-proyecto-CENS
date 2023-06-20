@@ -22,6 +22,9 @@ public class InformeEmpresa {
     @Column(name = "Seguridad Asistencial")
     private int seguridadAsistencial;
 
+    @Column(name = "Registro clinico")
+    private int registroClinico;
+
     @Column(name = "Centro en el paciente")
     private int centroPaciente;
 
@@ -76,6 +79,9 @@ public class InformeEmpresa {
     @Column(name = "Documentación")
     private int documentacion;
 
+    @Column(name = "Eficiencia de desempeño")
+    private int eficienciaDeDesempeño;
+
     @Column(name = "Proceso Clinico")
     private double procesoClinico;
 
@@ -103,7 +109,7 @@ public class InformeEmpresa {
     }
 
     public InformeEmpresa(int idInforme, int eficienciaEficacia, int seguridadAsistencial, int centroPaciente, int interoperabilidad, int pruebasUsuario, int erroresUsuario, int capacidadAprendizaje, int accesibilidad, int toleranciaFallos, int capacidadRecuperacion, int arquitectura, int otrosAspectos, int autenticacion, int autorizacion, int criptografia, int gestionContrasenas, int integridad, int autenticidad,
-                          int gestionRiesgo, int documentacion, double procesoClinico, double compatibilidad, double usabilidad, double fiabilidad,
+                          int gestionRiesgo, int documentacion, double procesoClinico, double compatibilidad, double usabilidad, double fiabilidad,int registroClinico,
                           double seguridad, RepEmpresa repRepEmpresa, Evaluador evaluador) {
         this.idInforme = idInforme;
         this.eficienciaEficacia = eficienciaEficacia;
@@ -133,5 +139,6 @@ public class InformeEmpresa {
         this.seguridad = seguridad;
         this.repRepEmpresa = repRepEmpresa;
         this.evaluador = evaluador;
+        this.registroClinico = registroClinico;
     }
 }
