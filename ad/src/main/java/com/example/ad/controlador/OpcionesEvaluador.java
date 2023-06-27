@@ -16,11 +16,6 @@ import java.util.List;
 @Controller
 public class OpcionesEvaluador {
 
-
-
-
-
-
     @Autowired
     private iEvaluadorServicio evaluadorServicio;
 
@@ -39,4 +34,8 @@ public class OpcionesEvaluador {
         return "TrazabilidadEva";
     }
 
+    @GetMapping("/Perfileval")
+    public String lll(Model model){
+        return "profileEVAL";
+    }
 }
