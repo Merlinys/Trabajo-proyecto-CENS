@@ -12,63 +12,63 @@
 </head>
 
 <body>
-<div class="d-flex" id="wrapper">
-    <!-- Sidebar inicio -->
-    <div class="bg-white" id="sidebar-wrapper">
-        <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
-            <img src="../imagenes/Logo-CENS-e1638186779920.png" alt="">
-        </div>
-        <div class="list-group list-group-flush my-3">
-            <!--"active" hace que las letras del sidebar se pongan azules-->
-            <a href="#" class="list-group-item list-group-item-action second-text fw-bold"><i
-                    class="fas fa-user me-2"></i>Perfil</a>
-            <a href="#" class="list-group-item list-group-item-action second-text fw-bold"><i
-                    class="fas fa-tachometer-alt me-2"></i>Visualizar
-                Resultados</a>
-            <a href="#" class="list-group-item list-group-item-action second-text active"><i class=""></i>Entregar
-                NDA</a>
-            <a href="#" class="list-group-item list-group-item-action second-text fw-bold"><i class=""></i>Ver
-                Seguimiento</a>
-            <a href="#" class="list-group-item list-group-item-action text-danger fw-bold"><i
-                    class="fas fa-power-off me-2"></i>Cerrar Sesion</a>
-
-        </div>
-    </div>
-    <!-- Fin Sidebar -->
-
-    <!-- Inicio Opcion lado izquierdo superior  -->
-    <div id="page-content-wrapper">
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
-            <div id="page-content-wrapper">
-                <section>
-                    <form action="" autocomplete="off" enctype="multipart/form-data">
-                        <p>Subir Archivo</p>
-                        <div>
-                            <input type="file" id="upload" style="display: none;">
-                            <label for="upload">Elegir Archvios</label>
-                        </div>
-
-                        <button><span>&#8682; Subir </span> <span class="uploading">Subiendo...</span></button>
-                        <button class="cancle">Pausar</button>
-                        <button class="volver">Cancelar</button>
-                        <div class="pr">
-                            <strong>
-                                <h4 class="ex">PDF</h4>
-                                <h5 class="size">2.5kb</h5>
-                            </strong>
-                            <progress min="0" max="100" value="0"></progress>
-                            <span class="progress-indicator"></span>
-                        </div>
-                    </form>
-                </section>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar inicio -->
+        <div class="bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                <img src="../imagenes/Logo-CENS-e1638186779920.png" alt="">
             </div>
-        </nav>
-        <!-- Fin Opcion lado izquierdo superior  -->
+            <div class="list-group list-group-flush my-3">
+                <!--"active" hace que las letras del sidebar se pongan azules-->
+                <a href="#" class="list-group-item list-group-item-action second-text fw-bold"><i
+                        class="fas fa-user me-2"></i>Perfil</a>
+                <a href="#" class="list-group-item list-group-item-action second-text fw-bold"><i
+                        class="fas fa-tachometer-alt me-2"></i>Visualizar
+                    Resultados</a>
+                <a href="#" class="list-group-item list-group-item-action second-text active"><i class=""></i>Entregar
+                    NDA</a>
+                <a href="#" class="list-group-item list-group-item-action second-text fw-bold"><i class=""></i>Ver
+                    Seguimiento</a>
+                <a href="#" class="list-group-item list-group-item-action text-danger fw-bold"><i
+                        class="fas fa-power-off me-2"></i>Cerrar Sesion</a>
+
+            </div>
+        </div>
+        <!-- Fin Sidebar -->
+
+        <!-- Inicio Opcion lado izquierdo superior  -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                <div id="page-content-wrapper">
+                    <section>
+                        <form action="" autocomplete="off" enctype="multipart/form-data">
+                            <p>Subir Archivo</p>
+                            <div> 
+                                <input type="file" id="upload" style="display: none;">
+                                <label id = "elegir" for="upload">Elegir Archivos</label>
+                            </div>
+
+                            <button><span>&#8682; Subir </span> <span class="uploading">Subiendo...</span></button>
+                            <button class="cancle">Pausar</button>
+                            <button class="volver">Cancelar</button>
+                            <div class="pr">
+                                <strong>
+                                    <h4 class="ex">PDF</h4>
+                                    <h5 class="size">2.5kb</h5>
+                                </strong>
+                                <progress min="0" max="100" value="0"></progress>
+                                <span class="progress-indicator"></span>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </nav>
+            <!-- Fin Opcion lado izquierdo superior  -->
+        </div>
     </div>
-</div>
-<script type="text/javascript" src="upload.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
         var el = document.getElementById("wrapper");
         var toggleButton = document.getElementById("menu-toggle");
 

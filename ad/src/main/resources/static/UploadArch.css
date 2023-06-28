@@ -4,27 +4,27 @@
     --second-text-color: #bbbec5;
     --second-bg-color: #c3ccc8;
 }
-
+  
 .primary-text {
     color: var(--main-text-color);
 }
-
+  
 .second-text {
     color: var(--second-text-color);
 }
-
+  
 .primary-bg {
     background-color: var(--main-bg-color);
 }
-
+  
 .secondary-bg {
     background-color: var(--second-bg-color);
 }
-
+  
 .rounded-full {
     border-radius: 100%;
 }
-
+  
 #wrapper {
     overflow-x: hidden;
     /*background-image: linear-gradient(
@@ -37,7 +37,7 @@
     );*/
     background: url(../imagenes/home1.png);
 }
-
+  
 #sidebar-wrapper { /*animacion de esconder opciones*/
     min-height: 100vh;
     margin-left: -15rem;
@@ -46,85 +46,85 @@
     -o-transition: margin 0.25s ease-out;
     transition: margin 0.25s ease-out;
 }
-
+  
 #sidebar-wrapper .sidebar-heading {
     padding: 0.875rem 1.25rem;
     font-size: 1.2rem;
 }
-
+  
 #sidebar-wrapper .list-group { /*ancho del tamaño de las letras de las*/
     width: 15rem;
 }
-
+  
 #page-content-wrapper {
     min-width: 100vw;
 }
-
+  
 #wrapper.toggled #sidebar-wrapper {
     margin-left: 0;
 }
-
+  
 #menu-toggle {
     cursor: pointer;
 }
-
+  
 .list-group-item {
     border: none;
     padding: 20px 30px;
 }
-
+  
 .list-group-item.active {
     background-color: transparent;
     color: var(--main-text-color);
     font-weight: bold;
     border: none;
 }
-
+  
 
 @media (min-width: 768px) {
     #sidebar-wrapper {
       margin-left: 0;
     }
-
+  
     #page-content-wrapper {
       min-width: 0;
       width: 100%;
     }
-
+  
     #wrapper.toggled #sidebar-wrapper {
       margin-left: -15rem;
     }
 }
 
 
-
+  
 .form-check-input{
     margin-right: 100px;
 }
-
+  
 td{
     font-size: 20px;
     margin-right: 55px;
  }
-
+  
 th{
     font-size: 20px;
 }
-
+  
 h3{
     color: white;
 }
-
+  
 h1{
     color: white;
  }
-
+  
 button{
     margin-right: 30px;
     height: 70px;
-
+  
 }
-
+  
 center input{
     height: 70px;
 }
@@ -132,6 +132,7 @@ center input{
 
 
 /*Upload shit*/
+
 
 
 *{
@@ -221,7 +222,7 @@ strong h4{
 progress{
     width: 100%;
     height: 30px;
-    -webkit-appearance: none;
+    -webkit-appearance: none; 
     border-radius: 5px;
 }
 progress::-webkit-progress-bar{
@@ -285,4 +286,3 @@ section button .cancle{
     }
 }
 
-}
