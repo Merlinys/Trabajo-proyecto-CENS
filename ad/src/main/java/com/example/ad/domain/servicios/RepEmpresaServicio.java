@@ -1,5 +1,7 @@
 package com.example.ad.domain.servicios;
 
+import com.example.ad.domain.pojo.InformeEmpresaPojo;
+import com.example.ad.domain.pojo.RepEmpresaPojo;
 import com.example.ad.persistance.CrudrepositorioEntity.IRepositorioRepEmpresaEntity;
 import com.example.ad.persistance.entities.RepEmpresa;
 import lombok.RequiredArgsConstructor;
@@ -19,4 +21,5 @@ public class RepEmpresaServicio implements IRepEmpresaServicio {
     public List<RepEmpresa> listar() {
         return repositorioRepEmpresa.findAll();
     }
+
 }

@@ -10,7 +10,8 @@ import java.util.Optional;
 @Repository
 public interface IRepositorioRepEmpresaEntity  extends JpaRepository<RepEmpresa,String> {
     @Query("select r from RepEmpresa r where r.rutEmpresa = ?1")
-    Optional<RepEmpresa> findByRutEmpresa(String rutEmpresa);
+    Optional<RepEmpresa> findByRutEmpresa(String id);
+
 
     /* Existe 2 formas de representar lo de abajo usando optional y no , con optional
         es por si no existe , si se escribe sin el optional tiene que si o si existir

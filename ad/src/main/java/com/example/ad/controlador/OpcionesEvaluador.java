@@ -38,4 +38,9 @@ public class OpcionesEvaluador {
     public String lll(Model model){
         return "profileEVAL";
     }
+
+    @GetMapping("/cambio")
+    public String cambio(Model model){
+        return "editarP";
+    }
 }
